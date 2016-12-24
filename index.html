@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="edX RTBN Interactive gamepad with Web Bluetooth">
+    <title>edX RTBN Companion Controller</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h3 id="tooltip">Controller Tooltip</h3>
+    <canvas id="myCanvas" width="640" height="350"></canvas>
+    <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+        <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+    <form id="grader">
+      <input size="25" width="25px" placeholder="Enter code to activate grader"/>
+      <button type="button">Submit</button>
+    </form>
+    <script src="js/controller.js"></script>
+    <script src="js/ble.js"></script>
+  </body>
+</html>
